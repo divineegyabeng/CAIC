@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "accent": "#D9A02B",
+    "handle": "@divine_egyabeng"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "photo": "photos/px-14640821.jpg",
+      "photoFocus": "52% 48%",
+      "headline": "The hotel was real. The speakers were real people.",
+      "headlineAccent": "The conference did not exist.",
+      "sub": "Tickets from 149 dollars. Sponsorships up to 25,000.",
+      "swipe": "HOW FAR THEY WENT"
+    },
+    {
+      "type": "idea",
+      "num": "01",
+      "title": "They did not copy\nan event. They\ninvented one.",
+      "body": "Proofpoint traced a fake conference called BioTold 2026, advertised for early November at a real Boston hotel. The hotel confirmed it had never heard of it."
+    },
+    {
+      "type": "idea",
+      "num": "02",
+      "title": "Real names did\nthe convincing.",
+      "body": "The site listed a Harvard geneticist and a Nobel laureate as speakers, and carried the logos of three well known science companies as sponsors. None of them had agreed to anything."
+    },
+    {
+      "type": "idea",
+      "num": "03",
+      "title": "The payload came\nafter you replied.",
+      "body": "Nothing harmful sat on the website. They invited people to speak or sponsor, waited for interest, then sent a follow up link carrying malware that opens the door for ransomware later."
+    },
+    {
+      "type": "idea",
+      "num": "04",
+      "title": "Flattery is the\nattack surface.",
+      "body": "An invitation to speak does not feel like a threat. It feels like recognition. That is exactly why people click the second email without checking the first."
+    },
+    {
+      "type": "outro",
+      "title": "Two things that\nstill work.",
+      "body": "Call the venue, not the organiser. One question to the hotel ends this in a minute.\n\nIf an event lists a speaker you can find online, write to that speaker. Someone invited under a false name wants to know."
+    },
+    {
+      "type": "follow",
+      "title": "Follow for more\nlike this.",
+      "note": "Plain breakdowns of the scams actually running right now."
+    }
+  ]
+}

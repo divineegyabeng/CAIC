@@ -1,0 +1,13 @@
+{
+  "meta": { "accent": "#D9A02B", "handle": "@divine_egyabeng" },
+  "slides": [
+    {
+      "type": "cover",
+      "photo": "photos/px-13207111.jpg",
+      "photoFocus": "48% 50%",
+      "headline": "Nobody claps for the",
+      "headlineAccent": "part that matters.",
+      "sub": "The work that changes things is almost always the work nobody sees you do."
+    }
+  ]
+}
