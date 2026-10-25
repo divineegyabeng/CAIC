@@ -43,10 +43,10 @@ body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow:
 .feather{position:absolute;top:0;bottom:0;left:700px;width:190px;z-index:3;
   background:linear-gradient(90deg, ${INK} 0%, rgba(7,16,36,.88) 38%, rgba(7,16,36,.45) 70%, rgba(7,16,36,0) 100%)}
 .edge{position:absolute;top:0;bottom:0;left:0;width:8px;z-index:6;background:${ACCENT}}
-.brand{position:absolute;z-index:5;left:72px;top:56px;display:flex;align-items:center;gap:16px}
-.brand img{height:46px;width:auto;display:block}
-.brand .wm{font-size:19px;font-weight:700;letter-spacing:.14em;color:#fff;text-transform:uppercase}
-.body{position:absolute;z-index:5;left:72px;top:168px;width:580px}
+.brand{position:absolute;z-index:5;left:72px;top:52px;display:flex;align-items:center;gap:18px}
+.brand img{height:78px;width:auto;display:block}
+.brand .wm{font-size:27px;font-weight:800;letter-spacing:.11em;color:#fff;text-transform:uppercase}
+.body{position:absolute;z-index:5;left:72px;top:206px;width:580px}
 h1{font-size:${c.size || 52}px;line-height:1.08;letter-spacing:-.032em;font-weight:800;color:#fff}
 h1 .ac{color:${ACCENT}}
 .sub{margin-top:24px;font-size:21px;line-height:1.45;font-weight:400;
