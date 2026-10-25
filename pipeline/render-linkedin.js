@@ -49,11 +49,11 @@ body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow:
 .body{position:absolute;z-index:5;left:72px;top:206px;width:580px}
 h1{font-size:${c.size || 52}px;line-height:1.08;letter-spacing:-.032em;font-weight:800;color:#fff}
 h1 .ac{color:${ACCENT}}
-.sub{margin-top:24px;font-size:21px;line-height:1.45;font-weight:400;
-  color:rgba(255,255,255,.70);max-width:520px}
+.sub{margin-top:26px;font-size:24px;line-height:1.46;font-weight:500;
+  color:rgba(255,255,255,.92);max-width:530px}
 .foot{position:absolute;z-index:5;left:72px;bottom:58px;display:flex;align-items:center;gap:16px;
-  font-size:17px;font-weight:600;letter-spacing:.03em;color:rgba(255,255,255,.82)}
-.foot .bar{width:40px;height:2px;background:${ACCENT}}
+  font-size:20px;font-weight:700;letter-spacing:.03em;color:#FFFFFF}
+.foot .bar{width:44px;height:3px;background:${ACCENT}}
 .pill{position:absolute;z-index:5;left:72px;bottom:54px;display:inline-flex;align-items:center;gap:14px;
   padding:15px 32px;border-radius:999px;background:${ACCENT};color:#071024;
   font-size:18px;font-weight:700;letter-spacing:-.01em}
