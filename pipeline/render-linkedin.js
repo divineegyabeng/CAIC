@@ -70,7 +70,7 @@ h1 .ac{color:${ACCENT}}
   ${c.footStyle === 'pill'
     ? `<div class="pill"><span class="dot"></span><span>${esc(c.foot || 'cyberwatchai.com')}</span></div>`
     : c.footStyle === 'none' ? ''
-    : `<div class="foot"><span class="bar"></span><span>${esc(c.foot || 'cyberwatchai.com')}</span></div>`}
+    : `<div class="foot"><span>${esc(c.foot || 'cyberwatchai.com')}</span></div>`}
 </div></body></html>`;
 
 (async () => {
