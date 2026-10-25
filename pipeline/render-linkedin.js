@@ -25,6 +25,7 @@ const NAVY = c.navy || '#0D2E7A';
 const INK = c.ink || '#071024';
 const ACCENT = c.accent || '#4D8DFF';
 const photo = dataUri(c.photo);
+const logo = dataUri(c.logo || 'brand/logo.png');
 
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -42,29 +43,34 @@ body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow:
 .feather{position:absolute;top:0;bottom:0;left:700px;width:190px;z-index:3;
   background:linear-gradient(90deg, ${INK} 0%, rgba(7,16,36,.88) 38%, rgba(7,16,36,.45) 70%, rgba(7,16,36,0) 100%)}
 .edge{position:absolute;top:0;bottom:0;left:0;width:8px;z-index:6;background:${ACCENT}}
-.brand{position:absolute;z-index:5;left:72px;top:62px;display:flex;align-items:center;gap:14px}
-.mark{width:30px;height:30px;border-radius:8px;border:2.5px solid ${ACCENT};
-  display:flex;align-items:center;justify-content:center}
-.mark i{width:10px;height:10px;border-radius:50%;background:${ACCENT};display:block}
-.brand .wm{font-size:17px;font-weight:700;letter-spacing:.17em;color:#fff;text-transform:uppercase}
+.brand{position:absolute;z-index:5;left:72px;top:56px;display:flex;align-items:center;gap:16px}
+.brand img{height:46px;width:auto;display:block}
+.brand .wm{font-size:19px;font-weight:700;letter-spacing:.14em;color:#fff;text-transform:uppercase}
 .body{position:absolute;z-index:5;left:72px;top:168px;width:580px}
 h1{font-size:${c.size || 52}px;line-height:1.08;letter-spacing:-.032em;font-weight:800;color:#fff}
 h1 .ac{color:${ACCENT}}
 .sub{margin-top:24px;font-size:21px;line-height:1.45;font-weight:400;
   color:rgba(255,255,255,.70);max-width:520px}
-.foot{position:absolute;z-index:5;left:72px;bottom:60px;display:flex;align-items:center;gap:16px;
-  font-size:16px;font-weight:600;letter-spacing:.04em;color:rgba(255,255,255,.80)}
+.foot{position:absolute;z-index:5;left:72px;bottom:58px;display:flex;align-items:center;gap:16px;
+  font-size:17px;font-weight:600;letter-spacing:.03em;color:rgba(255,255,255,.82)}
 .foot .bar{width:40px;height:2px;background:${ACCENT}}
+.pill{position:absolute;z-index:5;left:72px;bottom:54px;display:inline-flex;align-items:center;gap:14px;
+  padding:15px 32px;border-radius:999px;background:${ACCENT};color:#071024;
+  font-size:18px;font-weight:700;letter-spacing:-.01em}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:#071024}
 </style></head><body>
 <div class="card">
   <div class="photo"></div><div class="tint"></div>
   <div class="panel"></div><div class="feather"></div><div class="edge"></div>
-  <div class="brand"><span class="mark"><i></i></span><span class="wm">CyberWatch AI</span></div>
+  <div class="brand">${logo ? `<img src="${logo}">` : ''}<span class="wm">CyberWatch AI</span></div>
   <div class="body">
     <h1>${nl(c.headline)}${c.headlineAccent ? ` <span class="ac">${nl(c.headlineAccent)}</span>` : ''}</h1>
     ${c.sub ? `<div class="sub">${nl(c.sub)}</div>` : ''}
   </div>
-  <div class="foot"><span class="bar"></span><span>${esc(c.foot || 'cyberwatchai.com')}</span></div>
+  ${c.footStyle === 'pill'
+    ? `<div class="pill"><span class="dot"></span><span>${esc(c.foot || 'cyberwatchai.com')}</span></div>`
+    : c.footStyle === 'none' ? ''
+    : `<div class="foot"><span class="bar"></span><span>${esc(c.foot || 'cyberwatchai.com')}</span></div>`}
 </div></body></html>`;
 
 (async () => {
